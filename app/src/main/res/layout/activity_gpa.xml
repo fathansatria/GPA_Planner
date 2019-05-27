@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#B1A8D6"
+tools:context=".GPAActivity">
+
+<android.support.design.widget.AppBarLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@string/app_name"
+            android:text="Semester"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_semesterValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@string/app_name"
+            android:text="4"
+            android:textColor="#ffffffff"
+            android:textSize="24dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="293dp"
+    android:layout_height="293dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="140dp"
+    app:srcCompat="@drawable/iv_elipse" />
+
+<ImageView
+    android:id="@+id/imageView8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imageView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    app:srcCompat="@drawable/iv_semesterbox" />
+
+<TextView
+    android:id="@+id/dream"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="230dp"
+    android:fontFamily="sans-serif-medium"
+    android:text="My Dream GPA"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/dream_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:hint="4.00"
+        android:textSize="32dp"
+        android:layout_below="@id/dream"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>

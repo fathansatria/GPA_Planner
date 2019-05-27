@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1A8D6"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/iv_foods"
+        android:padding="0dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="-61dp"
+        android:layout_marginEnd="155dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="155dp"
+        app:srcCompat="@drawable/iv_steven" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Achelia Putri"
+        android:textSize="24dp"
+        android:layout_marginTop="15dp"
+        android:padding="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView6"
+        android:textColor="#4a4a4a"/>
+
+    <TextView
+        android:id="@+id/majorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Science, Pertamina University"
+        android:textSize="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textName"
+        android:textColor="#4a4a4a"/>
+
+    <TextView
+        android:id="@+id/mottoText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/majorText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text='" Aku sangat mencintai makanan, sejak aku tau makanan mencintai aku " '
+        android:textColor="#4a4a4a"
+        android:textSize="16dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mottoText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:background="#1a80b6"
+        android:text="Edit Profile" />
+
+</RelativeLayout>
